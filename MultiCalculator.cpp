@@ -1,4 +1,4 @@
-// This program was made for the Midterm project of an introductory programming course
+// This program was made for the midterm project of an introductory programming course
 
 // Kelton
 // 2/26/2024 - Amended 3/12/2024
