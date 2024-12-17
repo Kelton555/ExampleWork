@@ -12,3 +12,6 @@ Created as the second programming project in an introductory Java class. Meant t
 
 ### GameSkillCalculator.cpp (10/16/2024)
 Created as my midterm project for a C++ programming course. The midterm project was meant to assess our ability to use structs/enums and cstrings and our ability to sort and search arrays alongside the general assessments listed above (functions, valid input, variables, etc.).
+
+### PassphraseGenerator\[.java\] (11/23/2024 - 11/29/2024)
+Created as the fourth programming project in an introductory Java class. Meant to assess skills in file input, exceptions, and reusable class design. Some decisions were made to follow extremely specific rubric criteria, such as using both a hashset and a hashmap even though the hashmap implicitly contains the data in the hashset.
