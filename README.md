@@ -15,3 +15,6 @@ Created as my midterm project for a C++ programming course. The midterm project 
 
 ### PassphraseGenerator\[.java\] (11/23/2024 - 11/29/2024)
 Created as the fourth programming project in an introductory Java class. Meant to assess skills in file input, exceptions, and reusable class design. Some decisions were made to follow extremely specific rubric criteria, such as using both a hashset and a hashmap even though the hashmap implicitly contains the data in the hashset.
+
+### ChanceCalculator\[.cpp\] (11/28/2024 - 12/10/2024)
+Created as my final project for a C++ programming course. It was meant to assess our ability to utilize various things within C++ to implement a program of our devising. Some of these assessed 'things' included math operations and functions, classes specified with .h files, overloaded functions (in classes), inheritence or templates, and binary input and output.
