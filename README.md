@@ -19,5 +19,8 @@ Created as the fourth programming project in an introductory Java class. Meant t
 ### ChanceCalculator\[.cpp\] (11/28/2024 - 12/10/2024)
 Created as my final project for a C++ programming course. It was meant to assess our ability to utilize various things within C++ to implement a program of our devising. Some of these assessed 'things' included math operations and functions, classes specified with .h files, overloaded functions (in classes), inheritence or templates, and binary input and output.
 
+### ShapeDrawingProgram (~April 2025)
+Created as the 7th project in a Java course. Allows the user to draw in a window using various shapes, and to save their work to a file. Files consist of the exact shape objects drawn to the screen and can be loaded into the program.
+
 ### TicTacToe (~April 2025)
 Created as my final project for an ASP.NET course. Functional tic tac toe game using serverside logic with clientside storage.
