@@ -1,0 +1,1 @@
+This was made as the 7th project in a Java programming course. It's a program that allows the user to draw in a window using various shapes. Also included is the ability to save a drawing to file (as individual shapes to be reloaded) and to load said files. The entry function is in DrawingProgramViewer.java.
