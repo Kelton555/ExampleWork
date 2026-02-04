@@ -1,0 +1,82 @@
+﻿@model TicTacToeModel
+
+@{
+    ViewData["Title"] = "Home";
+}
+
+@if (Model.HasWinner) {
+    <div class="container-fluid text-center py-2 bg-success text-white">
+        @if (Model.Winner == "T")
+        {
+            <h1>It's a tie!</h1>
+        }
+        else
+        {
+            <h1>@Model.Winner wins!</h1>
+        }
+    </div>
+}
+
+@if (Model.HasWinner) {
+    <a class="text-center" asp-action="NewGame" asp-controller="Home">
+        <p>
+            New Game
+        </p>
+    </a>
+} else {
+    <h2 class="text-center">@Model.Turn's turn</h2>
+}
+<form class="container tic-tac-box" method="post" asp-controller="Home" asp-action="MakeMove">
+    <input type="hidden" asp-for="Board" value="@Model.Board" />
+    <input type="hidden" asp-for="Turn" value="@Model.Turn" />
+
+    <div class="row">
+        @for (int i = 1; i < 4; i++)
+        {
+            @if (String.IsNullOrWhiteSpace(Model.GetOwner(i)) && !Model.HasWinner)
+            {
+                <button class="col-sm-4 tic-tac-tile" type="submit" value="@i" name="position">
+                    <p>@Model.Board[i]</p>
+                </button>
+            } else {
+                <div class="col-sm-4 tic-tac-tile border">
+                    <p>@Model.Board[i]</p>
+                </div>
+            }
+        }
+    </div>
+    <div class="row">
+        @for (int i = 4; i < 7; i++)
+        {
+            @if (String.IsNullOrWhiteSpace(Model.GetOwner(i)) && !Model.HasWinner)
+            {
+                <button class="col-sm-4 tic-tac-tile" type="submit" value="@i" name="position">
+                    <p>@Model.Board[i]</p>
+                </button>
+            }
+            else
+            {
+                <div class="col-sm-4 tic-tac-tile border">
+                    <p>@Model.Board[i]</p>
+                </div>
+            }
+        }
+    </div>
+    <div class="row">
+        @for (int i = 7; i < 10; i++)
+        {
+            @if (String.IsNullOrWhiteSpace(Model.GetOwner(i)) && !Model.HasWinner)
+            {
+                <button class="col-sm-4 tic-tac-tile" type="submit" value="@i" name="position">
+                    <p>@Model.Board[i]</p>
+                </button>
+            }
+            else
+            {
+                <div class="col-sm-4 tic-tac-tile border">
+                    <p>@Model.Board[i]</p>
+                </div>
+            }
+        }
+    </div>
+</form>
